@@ -1,0 +1,36 @@
+Here's a solid .gitignore for your stack:
+gitignore# Dependencies
+node_modules/
+.npm/
+
+# Deno
+.deno/
+
+# Build output
+client/.svelte-kit/
+client/build/
+client/dist/
+
+# Environment & secrets
+*.env
+.env*
+!*.env.example
+
+# Docker
+.docker/
+
+# Playwright
+e2e-tests/test-results/
+e2e-tests/playwright-report/
+e2e-tests/blob-report/
+e2e-tests/.playwright/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
